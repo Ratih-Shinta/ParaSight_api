@@ -2,7 +2,7 @@
 
 ## Struktur
 ```
-parasight-backend/
+parasight-api/
 ├── app/
 │   ├── main.py            # entry point, lifespan, CORS, error handler
 │   ├── config.py          # settings (env var)
@@ -20,7 +20,7 @@ parasight-backend/
 
 ## Menjalankan di Windows (PowerShell)
 ```powershell
-cd parasight-backend
+cd parasight-api
 python -m venv venv
 .\venv\Scripts\Activate.ps1      # jika diblokir: Set-ExecutionPolicy -Scope Process RemoteSigned
 pip install -r requirements.txt
