@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    app_name: str = "Malarycs Backend"
+    app_name: str = "ParaSight Backend"
     app_version: str = "0.1.0"
 
     model_path: Path = BASE_DIR / "models" / "malaria_model.keras"
