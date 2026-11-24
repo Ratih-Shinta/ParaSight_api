@@ -22,9 +22,9 @@ class Settings(BaseSettings):
     input_size: int = 224
 
     # smear mode
-    max_smear_cells: int = Field(64, ge=1, le=500)
-    smear_max_side: int = Field(1280, ge=320)
-    smear_batch_size: int = Field(16, ge=1, le=128)
+    max_smear_cells: int = Field(16, ge=1, le=500)
+    smear_max_side: int = Field(800, ge=320)
+    smear_batch_size: int = Field(4, ge=1, le=128)
     smear_gradcam_max_cells: int = Field(12, ge=0, le=100)
     smear_min_area_frac: float = 0.0003
     smear_max_area_frac: float = 0.03
