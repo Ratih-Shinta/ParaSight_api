@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     smear_min_contrast: float = 6.0
     smear_crop_background: Literal["black", "bg", "keep"] = "black"
 
-    allowed_origins: str = "http://localhost:3000,http://localhost:5173,https://para-sight-web.vercel.app/"
+    allowed_origins: str = "http://localhost:3000,http://localhost:5173,https://para-sight-web.vercel.app"
 
     @property
     def max_upload_bytes(self) -> int:
